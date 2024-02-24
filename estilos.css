@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap');
+body{
+    font-family: "Libre Franklin", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 375px){
+
+
+main{
+    width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 0 auto;
+}
+.encabezado{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 16px;
+    margin-top: 70px;
+}
+.encabezado img{
+    width: 65px;
+    margin: 0 auto;
+}
+.encabezado p{
+    color: rgb(82, 81, 81);
+    font-size: 14px;
+    margin: 0 0 30px 0;
+}
+.encabezado h2{
+    font-weight: 200;
+}
+.encabezado h2::after{
+    content: " soon!";
+    font-weight: 900;
+    color: black;
+}
+.formulario{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    row-gap: 15px;
+    margin-bottom: 30px;
+}
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+}
+.formulario input{
+    width: 70%;
+    padding: 10px 0px 10px 25px;
+    border-radius: 25px;
+    border: 0.5px solid hsla(223, 87%, 63%, 0.973);
+    outline: none;
+}
+.input_valido{
+    background-color: rgb(243, 253, 243);
+}
+.mensaje_error_email{
+    margin: 10px 0 20px 0;
+    display: none;
+    font-size: 14px;
+    color: hsl(354, 100%, 66%);
+}
+input::placeholder{
+    color: hsla(222, 21%, 61%, 0.87);
+    font-weight: 100;
+    font-size: 12px;
+}
+.formulario button{
+    width: 76%;
+    padding: 12px 12px;
+    border-radius: 30px;
+    margin: 0 auto;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    box-shadow: 0 5px 10px 0 hsla(223, 96%, 79%, 0.651);
+}
+.pizzara_grafica{
+    width: 85%;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+.pizzara_grafica img{
+    width: 100%;  
+}
+
+.redes_sociales{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 1fr;
+    justify-content: center;    
+    margin: 140px 0 30px 0;
+
+}
+.facebook, .twitter, .instagram{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0.5px solid hsla(0, 0%, 59%, 0.863);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.derecho_autor{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+}
+
+@media screen and (min-width: 1440px){
+    
+main{
+    width: 1440px;
+}
+.encabezado h2{
+    font-size: 32px;
+}
+.encabezado p{
+    font-size: 16px;
+}
+.formulario{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 0px;
+    column-gap: 0px;
+    margin: 0px auto;
+}
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.formulario input{
+    width: 95%;
+    padding: 14px 24px;
+    margin: 0px;
+}
+.formulario button{
+    width: 80%;
+    height: 45px;
+    padding: 14px 0px;
+    margin: 0px;
+}
+.mensaje_error_email{
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+.formulario button:hover{
+    cursor: pointer;
+    background-color: hsl(223, 97%, 74%);
+}
+.pizzara_grafica{
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.redes_sociales{
+    margin: 70px 0 15px 0;
+}
+.facebook:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+
+}
+.facebook img:hover{
+    filter: brightness(4);
+}
+
+.twitter:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+}
+.twitter img:hover{
+    filter: brightness(4);
+}
+
+.instagram:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+}
+.instagram img:hover{
+    filter: brightness(4);
+}
+
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
